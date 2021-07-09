@@ -1,0 +1,121 @@
+:root {
+    --font-family: sans-serif;
+    --color: rgb(255,255,255);
+    --background-color: rgb(32,32,32);
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--color);
+    background: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: var(--background-color);
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background: rgba(0,0,0,.75);
+}
+
+#title {
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(255,255,255);
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+#search-bar {
+    display: flex;
+    width: 50%;
+    height: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+    #search-box {
+        font-size: 24px;
+        width: 75%;
+        color: var(--color);
+        background: rgba(24,24,24,.75);
+    }
+    #search-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        height: 48px;
+        font-size: 22px;
+        background: rgba(32,32,32,.75);
+        cursor: pointer;
+    }
+        #search-btn:hover { background: rgba(64,64,64,.75); }
+    #error-msg {
+        text-align: center;
+        width: 50%;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+#units-bar {
+    display: flex;
+    width: 13%;
+    height: auto;
+    font-size: 24px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#units-bar * {
+    width: 50%;
+    text-align: center;
+    padding: 4px;
+    cursor: pointer;
+}
+
+#results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+#results-left, #results-right {
+    text-align: center;
+    width: 25%;
+    padding: 24px;
+}
+#results-right { border-left: 1px solid rgb(192,192,192); }
+#name { font-size: 48px; }
+#temp {
+    font-size: 64px;
+    padding: 12px;
+}
+#time {
+    font-size: 48px;
+    padding: 12px;
+}
+#feels-like, #humidity, #wind {
+    font-size: 18px;
+}
